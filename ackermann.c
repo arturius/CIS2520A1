@@ -5,7 +5,7 @@
     Date: Sept. 15, 2018
 */
 #include"a1.h"
-/*Ackermann's Function*/
+/*Function that excutes Ackermann's Function*/
 long long ackermannFunction (long long m, long long n){
     if (m == 0 && n>=0 ){
         return n+1;
@@ -27,7 +27,7 @@ void ackermannBoundry (){
             j++;
 
         }while(ackermannFunction(i,j)<INT_MAX);
-        printf("The range for n using m vale = %d is (0 - %d)\n",i,j-1);
+        printf("The range for n using m vale = %lld is (0 - %lld)\n",i,j-1);
         j = 0;
         i++;
     }while(ackermannFunction(i,j)<=INT_MAX);
