@@ -18,18 +18,4 @@ long long ackermannFunction (long long m, long long n){
     }
 }
 
-void ackermannBoundry (){
-    long long i =0;
-    long long j = 0;
-    do{
 
-        do{
-            j++;
-            //printf("%lld returns '%lld' \n",j, ackermannFunction(i,j));
-        }while(ackermannFunction(i,j)<INT_MAX);
-        printf("The range for n using m vale = %lld is (0 - %lld)\n",i,j-1);
-        j = 0;
-        i++;
-    }while(ackermannFunction(i,j)<=INT_MAX);
-
-}

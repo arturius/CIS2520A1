@@ -18,14 +18,13 @@ int main(){
     printf("Please input value for n to be used in ackerman's function: ");
     scanf ("%lld",&userN);
     printf("The result of ackerman's function is '%lld'\n",ackermannFunction(userM,userN));
-    printf("Please input value for the number that will be square rooted : ");
+    printf("Please input a postitive number to be square rooted : ");
     scanf ("%lf",&userX);
     printf("Please input value for acuracy of the number being square rooted : ");
     scanf ("%lf",&userAccuracy);
     recurveNewton(userX,userX,userAccuracy);
     interativeNewton (userX,userAccuracy);
-    printf("Doing ackermann\n");
-    ackermannBoundry();
+    
     return 0;
 }
 

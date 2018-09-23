@@ -17,7 +17,7 @@
 void recurveCarbon (char *unusedLetter, char *givenString);
 
 long long ackermannFunction(long long m, long long n);
-void ackermannBoundry ();
+
 
 void recurveNewton (double a, double x, double accuracy);
 void interativeNewton (double x, double accuracy);
